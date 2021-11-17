@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="TestApp" customModuleProvider="target">
+            <connections>
+                <outlet property="enterButton" destination="qkj-4J-JcS" id="arr-Ld-D87"/>
+                <outlet property="iconViewHeightConstraint" destination="U0j-ok-Lgy" id="O8e-75-2HD"/>
+                <outlet property="iconViewTopConstraint" destination="Zhb-CT-vwh" id="PbX-Zg-gyN"/>
+                <outlet property="privacyTermsLabel" destination="mqK-Rc-3I0" id="da8-x1-0dC"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Bqi-1A-QlD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="githubicon" translatesAutoresizingMaskIntoConstraints="NO" id="nyR-mn-vzn">
+                    <rect key="frame" x="157" y="44" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Pap-F0-Qdn"/>
+                        <constraint firstAttribute="height" constant="100" id="U0j-ok-Lgy"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Trending Repositories App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-uN-0Ln">
+                    <rect key="frame" x="20" y="164" width="374" height="95.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumod tempor incididunt ut labore et dolore magna." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erK-Dp-Hld">
+                    <rect key="frame" x="20" y="279.5" width="374" height="57.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkj-4J-JcS">
+                    <rect key="frame" x="51" y="765" width="312.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qkj-4J-JcS" secondAttribute="height" multiplier="9:4" constant="200" id="3sr-hJ-1Z4"/>
+                        <constraint firstAttribute="height" constant="50" id="hD8-qe-xP2"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Enter the app">
+                        <backgroundConfiguration key="background" cornerRadius="25">
+                            <color key="backgroundColor" red="0.24341922999999999" green="0.46437078710000002" blue="0.74664634470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqK-Rc-3I0">
+                    <rect key="frame" x="15" y="845" width="384" height="21"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Privacy policy and Term of use">
+                            <attributes>
+                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.050405152139999999" green="0.066232085230000001" blue="0.091167934239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Bo-uN-0Ln" secondAttribute="trailing" constant="20" id="2wM-vr-FJj"/>
+                <constraint firstItem="nyR-mn-vzn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4AL-DD-QZm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="mqK-Rc-3I0" secondAttribute="trailing" constant="15" id="LSE-0f-7Mu"/>
+                <constraint firstItem="erK-Dp-Hld" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="MgV-u8-5TK"/>
+                <constraint firstItem="8Bo-uN-0Ln" firstAttribute="top" secondItem="nyR-mn-vzn" secondAttribute="bottom" constant="20" id="Od6-tT-fW5"/>
+                <constraint firstItem="erK-Dp-Hld" firstAttribute="top" secondItem="8Bo-uN-0Ln" secondAttribute="bottom" constant="20" id="PIP-aC-b9E"/>
+                <constraint firstItem="qkj-4J-JcS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="R9B-TC-Rjn"/>
+                <constraint firstItem="mqK-Rc-3I0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="VCf-Lw-H2K"/>
+                <constraint firstItem="mqK-Rc-3I0" firstAttribute="top" secondItem="qkj-4J-JcS" secondAttribute="bottom" constant="30" id="ZZN-O6-Ry5"/>
+                <constraint firstItem="nyR-mn-vzn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Zhb-CT-vwh"/>
+                <constraint firstAttribute="bottom" secondItem="mqK-Rc-3I0" secondAttribute="bottom" constant="30" id="bPL-KB-bix"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="erK-Dp-Hld" secondAttribute="trailing" constant="20" id="f4s-2z-Hen"/>
+                <constraint firstItem="8Bo-uN-0Ln" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="oxP-Ux-68K"/>
+            </constraints>
+            <point key="canvasLocation" x="46" y="113"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="githubicon" width="128" height="128"/>
+    </resources>
+</document>
